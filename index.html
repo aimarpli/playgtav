@@ -371,8 +371,15 @@
         import { getAuth, signInAnonymously, signInWithCustomToken } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, doc, setDoc, getDoc, deleteDoc, collection, onSnapshot, getDocs } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'default-app-id';
-        const firebaseConfig = typeof __firebase_config !== 'undefined' ? JSON.parse(__firebase_config) : { apiKey: "mock", projectId: "mock" };
+        const firebaseConfig = {
+            apiKey: "AIzaSyAnEGpmS_WA5TLZvvoQ2bWOEGuLqsAlsLQ",
+            authDomain: "gtav-abfd3.firebaseapp.com",
+            projectId: "gtav-abfd3",
+            storageBucket: "gtav-abfd3.firebasestorage.app",
+            messagingSenderId: "682077235786",
+            appId: "1:682077235786:web:e164d3b8901cdfe00b94b3"
+        };
+        const appId = "gtav-abfd3";
 
         const app = initializeApp(firebaseConfig);
         const auth = getAuth(app);
